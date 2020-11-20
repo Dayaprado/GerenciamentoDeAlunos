@@ -26,4 +26,15 @@ public class EstudanteGrad extends Estudante {
     public Integer getHoras(){
         return horasAtividades;
     }
+    
+    @Override
+    public int getTotalCreditos() {
+        int creditos = super.getTotalCreditos();
+        return creditos + this.getHoras();
+    }
+    
+    @Override
+    public String getInfoComplementar(){
+        return this.getHoras().toString();
+    }
 }

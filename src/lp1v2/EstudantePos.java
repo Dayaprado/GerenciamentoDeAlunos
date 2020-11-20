@@ -32,4 +32,14 @@ public class EstudantePos extends Estudante {
     public String getOrientador(){
         return orientador;
     }
+    
+    @Override
+    public int getTotalCreditos() {
+        return super.getTotalCreditos();
+    }
+    
+    @Override
+    public String getInfoComplementar(){
+        return this.getTema() + ": " + this.getOrientador();
+    }
 }

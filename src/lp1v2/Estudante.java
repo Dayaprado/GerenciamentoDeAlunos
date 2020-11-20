@@ -5,7 +5,6 @@
  */
 package lp1v2;
 
-import projeto_v1.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,11 +31,25 @@ public abstract class Estudante {
     }
 
     public List<Disciplina> getDisciplinasMatriculadas() {
-        return new ArrayList<Disciplina>();
+        List<Disciplina> d = new ArrayList<>();
+        for(Matricula m: this.matriculas){
+            d.add(m.getDisciplina());
+        }
+        
+        return d;
     }
     
     public int getTotalCreditos() {
-        return 0;
+        int total = 0;
+        for(Matricula m: this.matriculas){
+            total += m.getDisciplina().getCreditos();
+        }
+        
+        return total;
+    }
+    
+    public String getInfoComplementar(){
+        return "";
     }
 
     public long getId() {

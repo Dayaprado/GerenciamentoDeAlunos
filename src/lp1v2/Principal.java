@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package projeto_v1;
+package lp1v2;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -21,10 +21,9 @@ public class Principal {
     public static void main(String[] args) throws FileNotFoundException, IOException{
         //caminho dos arquivos que estao dentro do pacote java.
         String arqDisciplinas = "./src/arquivos/arqDisciplinas.txt";
-        String arqEstudantes = "./src/arquivos/arqEstudantes.txt";
-        String arqMatriculas = "./src/arquivos/arqMatriculas.txt";
+        String arqEstudantes = "./src/arquivos/arqEstudantesV2.txt";
+        String arqMatriculas = "./src/arquivos/arqMatriculasV2.txt";
 
-        
         // instanciando as classes
         nome = "Centro_Universitario SENAC";
         centro_universitario = new Centro_Universitario(nome); // new é instância
@@ -32,7 +31,7 @@ public class Principal {
         // Embaixo rola a magica: Carregamos os dados do TXT dentro de ArrayLists
         centro_universitario.carregarDadosArquivo(arqDisciplinas, arqEstudantes, arqMatriculas);    
 
-        GestaoAcademicaApp1 gestao = new GestaoAcademicaApp1(centro_universitario);
+        GestaoAcademicaApp2 gestao = new GestaoAcademicaApp2(centro_universitario);
         gestao.executar();
     }
     

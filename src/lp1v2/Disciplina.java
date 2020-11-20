@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package projeto_v1;
+package lp1v2;
 
+import projeto_v1.*;
 import java.util.ArrayList;
 import java.util.List;
 
