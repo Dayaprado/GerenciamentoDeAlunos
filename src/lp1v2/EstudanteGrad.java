@@ -11,7 +11,7 @@ import projeto_v1.Matricula;
 
 /**
  *
- * @author crisdut
+ * @author dayprado
  */
 public class EstudanteGrad extends Estudante {
     

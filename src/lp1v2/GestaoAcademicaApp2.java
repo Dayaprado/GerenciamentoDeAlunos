@@ -59,11 +59,11 @@ public class GestaoAcademicaApp2 {
             if (codDisci.equals(disciplina)) {
                 Estudante aluno = matricula.getEstudante();
                 alunos.add(
-                        aluno.getId() + delimitador
-                        + aluno.getNome() + delimitador
-                        + aluno.getEmail() + delimitador
-                        + aluno.getTotalCreditos() + delimitador
-                        + aluno.getInfoComplementar()
+                    aluno.getId() + delimitador + 
+                    aluno.getNome() + delimitador +
+                    aluno.getEmail() + delimitador +
+                    aluno.getTotalCreditos() + delimitador +
+                    aluno.getInfoComplementar()
                 );
 
             }
@@ -81,8 +81,8 @@ public class GestaoAcademicaApp2 {
             if (Long.parseLong(codAluno) == id) {
                 Disciplina disciplina = matricula.getDisciplina();
                 disciplinas.add(
-                        disciplina.getCodigo() + delimitador +
-                        disciplina.getCreditos()
+                    disciplina.getCodigo() + delimitador +
+                    disciplina.getCreditos()
                 );
             }
         }
